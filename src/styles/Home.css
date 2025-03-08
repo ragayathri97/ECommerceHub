@@ -1,0 +1,98 @@
+.home-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .hero-section {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+  }
+  
+  .hero-section h1 {
+    color: #14057d;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-section p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #666;
+  }
+  
+  .shop-now-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .featured-products {
+    margin-top: 40px;
+  }
+  
+  .featured-products h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Promotional Banner Section */
+  .promo-section {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .promo-banner {
+    flex: 1;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .promo-banner h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .promo-banner p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  /* About Us Section */
+  .about-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .about-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #14057d;
+  }
+  
+  .about-section p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
