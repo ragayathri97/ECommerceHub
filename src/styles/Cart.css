@@ -22,7 +22,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  border: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   border-radius: 8px;
   background-color: #fff;
   transition: box-shadow 0.3s ease;
@@ -112,7 +112,7 @@
 
 .proceed-to-checkout {
   display: block;
-  width: 200px;
+  width: 280px;
   margin: 20px auto;
   padding: 10px 20px;
   background-color: #28a745;

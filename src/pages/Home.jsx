@@ -5,10 +5,14 @@ import { Link } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
 import "../styles/Home.css";
 
+// Import small product icons (you can replace these with your own assets)
+import headphoneIcon from "../assets/icons/headphone.png";
+import smartphoneIcon from "../assets/icons/smartphone.png";
+import shoppingBagIcon from "../assets/icons/shopping-bag.png";
+
 const Home = () => {
   const [featuredProducts, setFeaturedProducts] = useState([]);
 
-  // Fetch featured products from Firestore
   useEffect(() => {
     const fetchFeaturedProducts = async () => {
       try {
@@ -17,7 +21,6 @@ const Home = () => {
           id: doc.id,
           ...doc.data(),
         }));
-        // Limit to 8 products for "featured" section
         setFeaturedProducts(productList.slice(0, 8));
       } catch (error) {
         console.error("Error fetching products: ", error);
@@ -30,12 +33,32 @@ const Home = () => {
     <div className="home-container">
       {/* Hero Section */}
       <header className="hero-section">
-        <h1>Welcome to ECommerceHub</h1>
-        <p>Discover the best deals on electronics, fashion, and more!</p>
-        <p>Shop now and enjoy fast shipping on all orders over $50.</p>
-        <Link to="/shop" className="shop-now-button">
-          Shop Now
-        </Link>
+        <div className="hero-content">
+          <h1>Welcome to ECommerceHub</h1>
+          <p>Discover the best deals on electronics, fashion, and more!</p>
+          <p>Shop now and enjoy fast shipping on all orders over $50.</p>
+          <Link to="/shop" className="shop-now-button">
+            Shop Now
+          </Link>
+        </div>
+        {/* Floating Product Icons */}
+        <div className="floating-icons">
+          <img
+            src={headphoneIcon}
+            alt="Headphone Icon"
+            className="floating-icon headphone"
+          />
+          <img
+            src={smartphoneIcon}
+            alt="Smartphone Icon"
+            className="floating-icon smartphone"
+          />
+          <img
+            src={shoppingBagIcon}
+            alt="Shopping Bag Icon"
+            className="floating-icon shopping-bag"
+          />
+        </div>
       </header>
 
       {/* Featured Products Section */}

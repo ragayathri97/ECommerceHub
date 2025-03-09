@@ -1,74 +1,198 @@
 .checkout-container {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.checkout-container h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.cart-summary {
+  margin-bottom: 30px;
+}
+
+.cart-summary h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.item-name {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.item-price {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.cart-total {
+  text-align: right;
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+.shipping-details {
+  margin-bottom: 30px;
+}
+
+.shipping-details h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.shipping-details form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group .error {
+  color: #dc3545;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.place-order-button {
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.place-order-button:hover {
+  background-color: #218838;
+}
+
+.order-confirmation {
+  text-align: center;
+}
+
+.order-confirmation h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.order-confirmation p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.continue-shopping {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff9900;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.continue-shopping:hover {
+  background-color: #e68a00;
+}
+
+.empty-cart {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.empty-cart a {
+  color: #ff9900;
+  text-decoration: none;
+}
+
+.empty-cart a:hover {
+  text-decoration: underline;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .checkout-container h1 {
+    font-size: 2rem;
   }
-  .shipping-details{
-    max-width: 550px;
-    margin: 0 auto;
-    border: 1px solid #e93434;
-    border-radius: 5px;
+
+  .cart-summary h2,
+  .shipping-details h2 {
+    font-size: 1.5rem;
   }
-  .cart-summary{
-    margin-bottom: 20px;
-  }
-  
-  .cart-items {
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
+
   .cart-item {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+    flex-direction: column;
+    gap: 5px;
   }
-  
+
   .cart-total {
-    margin-top: 10px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
+
   .form-group input {
-    width: 70%;
-    padding: 8px;
-    border: 1px solid #ddd;
-    background-color: #fff;
-    border-radius: 4px;
+    font-size: 0.9rem;
   }
-  
+
   .place-order-button {
-    padding: 10px 20px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    font-size: 1rem;
   }
-  
-  .order-confirmation {
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+
+  .order-confirmation h2 {
+    font-size: 1.5rem;
   }
-  
-  .continue-shopping {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+
+  .order-confirmation p {
+    font-size: 1rem;
   }
+}
