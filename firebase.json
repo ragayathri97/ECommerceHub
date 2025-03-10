@@ -8,8 +8,8 @@
     ],
     "rewrites": [
       {
-        "source": "**",
-        "destination": "/index.html"
+        "source": "/ECommerceHub/**",
+        "destination": "/ECommerceHub/index.html"
       }
     ]
   }

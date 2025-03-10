@@ -12,6 +12,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "express": "^4.21.2",
     "firebase": "^11.4.0",
     "qrcode.react": "^4.2.0",
     "react": "^19.0.0",
